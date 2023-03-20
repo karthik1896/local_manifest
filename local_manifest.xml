@@ -6,14 +6,39 @@
      
      <remote name="arrow"
           fetch="https://github.com/arrowos" />
-     
+
+     <remote name="aod"
+          fetch="https://github.com/ArrowOS-Devices" />
+
+     <remote name="aop"
+          fetch="https://gitlab.com/arrowos-project" />
+  
+     <remote name="lab" 
+          fetch="https://gitlab.com"/>
+
+  <!-- Tress -->
+
   <project path="device/asus/X00T" name="device_asus_X00T" remote="404-x00t" revision="tokui"/>
   <project path="vendor/asus" name="vendor_asus" remote="404-x00t" revision="tokui"/>
   <project path="kernel/asus/sdm660" name="android_kernel_asus_sdm660" remote="404-x00t" revision="tokui" />
+
+  <!-- HALS -->
+
   <project path="hardware/qcom/display" name="hardware_qcom_display" remote="404-x00t" revision="tokui"/>
   <project path="hardware/qcom/media" name="hardware_qcom_media" remote="404-x00t" revision="tokui"/>
   <project path="vendor/qcom/opensource/audio-hal/primary-hal" name="vendor_qcom_opensource_audio-hal_primary-hal" remote="404-x00t" revision="tokui" />
+
+  <!-- GCC -->
+
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9" remote="arrow" revision="arrow-13.0"/>
   <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="android_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9" remote="arrow" revision="arrow-13.0"/>
+
+  <!-- Clang -->
+  
+  <project path="prebuilts/clang/host/linux-x86/clang-r416183b1" name="android_prebuilts_clang_host_linux-x86_clang-r416183b1" remote="aod" revision="arrow-11.0" />
+        
+  <project path="prebuilts/clang/host/linux-x86/clang-r437112b" name="android_prebuilts_clang_host_linux-x86_clang-r437112b" remote="aop" revision="master" />
+  
+  <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="ImSurajxD/clang-r450784d" remote="lab" revision="master" clone-depth="1"/>
 
 </manifest>
