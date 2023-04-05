@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
      
-      <remote name="404-x00t"
-          fetch="https://github.com/Project404-android-asus-sdm660" />
+      <remote name="vos"
+          fetch="https://github.com/VoltageOS-Devices" />
      
-     <remote name="arrow"
-          fetch="https://github.com/arrowos" />
+     <remote name="karthik"
+          fetch="https://github.com/karthik1896" />
 
      <remote name="aod"
           fetch="https://github.com/ArrowOS-Devices" />
@@ -18,20 +18,16 @@
 
   <!-- Tress -->
 
-  <project path="device/asus/X00T" name="device_asus_X00T" remote="404-x00t" revision="tokui"/>
-  <project path="vendor/asus" name="vendor_asus" remote="404-x00t" revision="tokui"/>
-  <project path="kernel/asus/sdm660" name="android_kernel_asus_sdm660" remote="404-x00t" revision="tokui" />
+  <project path="device/asus/X00T" name="device_asus_X00T" remote="vos" revision="13"/>
+  <project path="vendor/asus" name="vendor_asus" remote="vos" revision="13"/>
+  <project path="kernel/asus/sdm660" name="android_kernel_asus_sdm660" remote="vos" revision="13" />
 
   <!-- HALS -->
 
-  <project path="hardware/qcom/display" name="hardware_qcom_display" remote="404-x00t" revision="tokui"/>
-  <project path="hardware/qcom/media" name="hardware_qcom_media" remote="404-x00t" revision="tokui"/>
-  <project path="vendor/qcom/opensource/audio-hal/primary-hal" name="vendor_qcom_opensource_audio-hal_primary-hal" remote="404-x00t" revision="tokui" />
+  <project path="hardware/qcom-caf/msm8998/display" name="hardware_qcom-caf_msm8998_display" remote="karthik" revision="13"/>
+  <project path="hardware/qcom-caf/msm8998/media" name="hardware_qcom-caf_msm8998_media" remote="karthik" revision="13"/>
+  <project path="hardware/qcom-caf/msm8998/audio" name="hardware_qcom-caf_msm8998_audio" remote="karthik" revision="13" />
 
-  <!-- GCC -->
-
-  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9" remote="arrow" revision="arrow-13.0"/>
-  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="android_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9" remote="arrow" revision="arrow-13.0"/>
 
   <!-- Clang -->
   
