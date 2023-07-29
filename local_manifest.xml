@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+      <remote name="404"
+          fetch="https://github.com/Project404-android-asus-sdm660" />
+      <remote name="arrow"
+          fetch="https://github.com/ArrowOS" />
+
+  <!-- Tress -->
+
+  <project path="device/asus/X00T" name="device_asus_X00T" remote="404" revision="test"/>
+  <project path="vendor/asus" name="vendor_asus" remote="404" revision="test"/>
+  <project path="kernel/asus/sdm660" name="android_kernel_asus_sdm660" remote="404" revision="tokui" />
+
+  <!-- HALS -->
+
+  <project path="hardware/qcom/display" name="hardware_qcom_display" remote="404" revision="test"/>
+  <project path="hardware/qcom/media" name="hardware_qcom_media" remote="404" revision="test"/>
+  <project path="vendor/qcom/opensource/audio-hal/primary-hal" name="vendor_qcom_opensource_audio-hal_primary-hal" remote="404" revision="tokui" />
+
+  <!-- GCC -->
+
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="android_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9" remote="arrow" revision="arrow-13.1" />
+  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9" remote="arrow" revision="arrow-13.1"/>
